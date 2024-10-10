@@ -1,6 +1,13 @@
 # control flow is the order in which instructions are executed in a python program
 # CONDITIONAL STATEMENT: if-else-elif(else if)
 # put any number from 50 to test the match statement
+def callName(name):
+    count=0
+    for item in name:
+     print(item)
+    while count<len(name):
+         print("Testing your name with while", name[count])
+         count+=1
 age = input('Enter your current Age ')
 age = int(age)
 if age >= 18 and age < 50:
@@ -10,7 +17,7 @@ if age >= 18 and age < 50:
     if answer == "y":
         currentYear = input("What year is this? ")
         currentYear = int(currentYear)
-        input = input("Where you born in "+str(currentYear-age)+" ")
+        input = input("Where you born in "+str(currentYear-age)+"?")
         if input == "y": #ENTER NO("n") TO TEST FOR LOOPING!!
             print("Great, that proves python is the best!!")
         else:
@@ -18,6 +25,8 @@ if age >= 18 and age < 50:
     else:
         print("Okay!!")
         print("Have a great time learning Python!!")
+        name= input("Enter your Name: ")
+        print(callName(name))
 elif age < 18 and age > 0:
     print('Nice to meet you early python learner')
     print("Answer y/n !")
@@ -33,6 +42,8 @@ elif age < 18 and age > 0:
     else:
         print("Okay!!")
         print("Have a great time learning Python!!")
+        name= input("Enter your Name: ")
+        print(callName(name))
 else:
     print("Hmmm looks like you are either above 50 or you put a wrong number!!")
 
@@ -50,15 +61,8 @@ else:
         case 500 | 501:
             print("Server Error")   
         case _:
-            print("Unknown")          
+            print("Unknown")   
+            name= input("Enter your Name: ")
+    print(callName(name))       
 # LOOPS: for-while
-
-name= input("Enter your Name: ")
-count=0
-for item in name:
-    print(item)
-    while count<len(name):
-        print("Testing your name with while", name[count])
-        count+=1
-
-    # 
+    

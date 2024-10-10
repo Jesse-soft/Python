@@ -14,7 +14,7 @@ a = 10+10j  # complex number
 name = "Jesse"  # string
 example_list = [1, "hello", 4.5, 'A']  # list
 print(type(example_list))
-# tuples are similar lists but only that they cannot be changed.
+# tuples are similar to lists but only that they cannot be changed i.e an element of the sequence cannot be re-assigned.
 
 # DICTIONARY: Key-Value Pair.
 ed = {'a': 22, 'b': 44.4}
